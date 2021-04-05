@@ -6,7 +6,7 @@ const path = require('path');
 const jwt = require('jsonwebtoken')
 
 app.get('/', (req, res)=> res.sendFile(path.join(__dirname, 'index.html')));
-
+//
 const SECRET_KEY = process.env.JWT
 
 app.post('/api/auth', async(req, res, next)=> {
